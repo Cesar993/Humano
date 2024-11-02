@@ -8,7 +8,7 @@ const Nav = () => {
                 <Link to={'/'}>
                 <img className='' src="pel-terr.gif" alt="spin" />
                 </Link>
-                <nav className='text-white flex justify-center w-3/5 
+                <nav className='text-white flex justify-center lg:w-3/5 
                 h-16 border-colorBaseVedeBorde border-2
                 bg-colorBaseVedeBanner '>
                     <ul className='flex flex-row gap-4 justify-around w-full items-start uppercase

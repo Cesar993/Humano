@@ -12,7 +12,7 @@ const Footer = () => {
                     <div className='flex flex-col
                     justify-center items-center 
                     bg-colorBaseVede border-colorBaseVedeBorde 
-                    border-2 h-32 w-3/6 p-4 '>
+                    border-2 h-auto w-3/6 p-4 '>
                         <Texto 
                         texto={`Explora un mundo lleno de suspense, horror y emoción. Aquí encontrarás reseñas, recomendaciones y todo lo relacionado con el fascinante género del terror.
                             Síguenos en nuestras redes sociales para mantenerte al tanto de las últimas novedades, trailers y eventos especiales.

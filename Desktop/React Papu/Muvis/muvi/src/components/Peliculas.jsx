@@ -19,7 +19,11 @@ const Peliculas = () => {
 
         } else {
             setTipos(
-                peliculas.filter(pel => pel.categorias_id === parseInt(valor))
+                peliculas.filter(pel => 
+                    Array.isArray(pel.categorias_id) 
+                        ? pel.categorias_id.includes(parseInt(valor)) 
+                        : pel.categorias_id === parseInt(valor)
+                )
             )
         }
 
@@ -34,7 +38,7 @@ const Peliculas = () => {
 
     return (
         <>
-        <div className='flex pb-10 pt-10 justify-end w-4/5'>
+        <div className='flex pb-10 pt-10 lg:justify-end lg:w-4/5'>
             <div className="form-group flex items-center flex-row gap-10">
                 <label htmlFor="categorias" className='text-white '>Seleccione su pelicula</label>
                 <select
@@ -65,7 +69,7 @@ const Peliculas = () => {
             </div>
             <div className='h-4/5 w-4/5'>
                 {(tipos.length == 0) ? (
-                    <div className='grid grid-cols-3 justify-items-center gap-5 '>
+                    <div className='grid lg:grid-cols-3 justify-items-center gap-5 '>
                         {peliculas.map((pelicula) => (
                             <div key={pelicula.id}
                                 className='h-70 w-48 border-4  border-black'
