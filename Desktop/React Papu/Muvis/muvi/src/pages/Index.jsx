@@ -13,8 +13,9 @@ const Index = () => {
             </div>
             <section className='bg-black w-3/6 h-auto flex flex-row gap-1 mx-auto pt-2 pb-1 '>
 
-                <div className='hidden md:block bg-colorBaseVede
-             border-colorBaseVedeBorde border-2 h-auto w-2/6'>
+                <div className='lg:block bg-colorBaseVede
+             border-colorBaseVedeBorde border-2 h-auto w-2/6
+             sm:hidden '>
                     <Lateral />
                 </div>
                 <div className='bg-colorBaseVede border-colorBaseVedeBorde 

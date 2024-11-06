@@ -10,7 +10,7 @@ const Peliculas = () => {
 
     const [categoria, setCategoria] = useState(0)
     const [tipos, setTipos] = useState([])
-
+    
 
     const handleDesplegar = (valor) => {
         setCategoria(valor);
@@ -69,7 +69,7 @@ const Peliculas = () => {
             </div>
             <div className='h-4/5 w-4/5'>
                 {(tipos.length == 0) ? (
-                    <div className='grid lg:grid-cols-3 justify-items-center gap-5 '>
+                    <div className='grid grid-cols-3  sm:grid-cols-2 justify-items-center gap-5 '>
                         {peliculas.map((pelicula) => (
                             <div key={pelicula.id}
                                 className='h-70 w-48 border-4  border-black'
@@ -87,7 +87,7 @@ const Peliculas = () => {
                     </div>
 
                 ) : (
-                    <div className='grid grid-cols-3 justify-items-center gap-1 '>
+                    <div className='grid grid-cols-3  sm:grid-cols-2 justify-items-center gap-1 '>
                         {tipos.map((pelicula) => (<div key={pelicula.id}
                             className='h-70 w-48 border-4 mt-4 border-black'
                         >

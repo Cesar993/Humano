@@ -7,6 +7,7 @@ import FrontEnd from './pages/FrontEnd'
 import Index from './pages/Index'
 import DetallePelicula from './pages/DetallePelicula'
 
+
          
 const router = createBrowserRouter(
   [
@@ -23,7 +24,9 @@ const router = createBrowserRouter(
         {
           path:'/pelicula',
           element: <DetallePelicula/>
-        }
+        },
+
+        
       ]
     }
   ]
